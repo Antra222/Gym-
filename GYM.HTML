@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antra fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* CSS RESET */
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 37px;
+            top: 20px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 64%;
+            margin: 29px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 14px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .left img {
+            border-radius: 50%;
+            height: 50px;
+            width: 78px;
+        }
+
+        .left div {
+            text-align: centre;
+            line-height: 19px;
+            font-size: 15px;
+        }
+
+        .navbar {
+            /* overflow: auto; */
+            display: inline-block;
+            padding-left: 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(145, 144, 144);
+
+        }
+
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            color: white;
+            /* even if color specified in body but user agent sheet will override n make text black inside button so override here onli */
+            background-color: black;
+            padding: 4px 14px;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(31,30,30);
+        }
+
+        .container{
+            border: 2px solid white;
+            position: absolute;
+            left: 578px;
+            margin: 20px 40px;
+            padding: 23px 20px;
+            width:50%;
+            font-size: 20px;
+            border-radius: 28px;
+        }
+
+        .form-group input{
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 25px;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            border-radius: 8px;
+        }
+
+        .container h1{
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container .btn{
+            display: block;
+            width: 68%;
+            margin: 20px auto;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="gym.gif" alt="" class="logo">
+            <div>Antra Fitness</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Patna now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
